@@ -1,0 +1,24 @@
+#menu-scroller {
+	width: 100%;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	li {
+		flex: 0 0 auto;
+		padding: 13px 8px 12px;
+	}
+	a {
+		padding-bottom: 0.3rem;
+	}
+
+	a:hover {
+		border-bottom: 1px solid black;
+	}
+}
+
+#menu-scroller::-webkit-scrollbar {
+	display: none;
+}

@@ -1,0 +1,34 @@
+@mixin flexCenter {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin responsive($breakpoint) {
+	@if $breakpoint == phone {
+		@media only screen and (max-width: 320px) {
+			@content;
+		}
+	}
+	@if $breakpoint == phone-lg {
+		@media only screen and (max-width: 480px) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == tab {
+		@media only screen and (max-width: 768px) {
+			@content;
+		}
+	}
+	@if $breakpoint == desktop {
+		@media only screen and (max-width: 1024px) {
+			@content;
+		}
+	}
+	@if $breakpoint == big-desktop {
+		@media only screen and (min-width: 1800px) {
+			@content;
+		}
+	}
+}

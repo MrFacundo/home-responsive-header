@@ -1,0 +1,24 @@
+body {
+	color: $text-color;
+}
+
+.top-bar {
+	font-size: 0.75rem;
+}
+
+.fa-star {
+	color: #f4c20d;
+}
+
+.user-menu span {
+	font-size: 1rem;
+	font-family: $poppins;
+}
+
+#menu-scroller {
+	font-size: 0.7rem;
+	a {
+		color: $text-color;
+		font-weight: 500;
+	}
+}
