@@ -1,4 +1,4 @@
-# Scripts
+## Scripts
 
 `npm install` for styling and compiling dependencies
 
