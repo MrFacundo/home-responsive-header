@@ -11,7 +11,7 @@
 
 // 4. Layout-related sections
 @import "layout/header", "layout/top-bar", "layout/middle-bar",
-	"layout/bottom-bar";
+  "layout/bottom-bar";
 
 // 5. Components
 @import "components/button";
@@ -19,5 +19,5 @@
 // 6. Page-specific styles
 @import "pages/home";
 
-// 7. Themes
-@import "themes/default";
+// // 7. Themes
+// @import "themes/default";

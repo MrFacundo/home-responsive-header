@@ -2,7 +2,7 @@
  * Set up a box model on the root element
  */
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /**
@@ -11,25 +11,26 @@ html {
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /**
  * Basic styles for links
  */
 a {
-	cursor: pointer;
+  color: $mid-grey;
+  cursor: pointer;
+  text-decoration: none;
 
-	color: $mid-grey;
-	text-decoration: none;
-	&:hover {
-		color: $text-color;
-	}
+  &:hover {
+    color: $text-color;
+  }
 }
+
 nav {
-	@include flexCenter;
+  @include flexCenter;
 }
 
 li {
-	display: inline-block;
+  display: inline-block;
 }

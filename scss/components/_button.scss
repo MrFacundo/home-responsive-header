@@ -1,46 +1,51 @@
 .user-menu {
-	button {
-		background: transparent;
-		border: none;
-		padding: 0.5rem;
-		color: $dark-grey;
-		cursor: pointer;
-		font-size: 1.5rem;
-		border-radius: 5px;
-		&:focus {
-			outline: none;
-		}
-		&:hover {
-			background: $light-grey;
-		}
-		@include responsive(tab) {
-			font-size: 1.25rem;
-		}
-		span {
-			@include responsive(tab) {
-				display: none;
-			}
-		}
-	}
+  button {
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    color: $dark-grey;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    @include responsive(tab) {
+      font-size: 1.25rem;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background: $light-grey;
+    }
+
+    span {
+      @include responsive(tab) {
+        display: none;
+      }
+    }
+  }
 }
+
 #hamburger {
-	display: none;
-	@include responsive(tab) {
-		display: flex;
-	}
+  display: none;
+  @include responsive(tab) {
+    display: flex;
+  }
 }
 
 .toggle-search-bar {
-	display: none;
-	@include responsive(phone-lg) {
-		display: flex;
-	}
+  display: none;
+  @include responsive(phone-lg) {
+    display: flex;
+  }
 }
 
 .logo {
-	align-self: flex-start;
-	padding-top: 1.2rem;
-	img {
-		max-width: 2.5rem;
-	}
+  align-self: flex-start;
+  padding-top: 1.2rem;
+
+  img {
+    max-width: 2.5rem;
+  }
 }

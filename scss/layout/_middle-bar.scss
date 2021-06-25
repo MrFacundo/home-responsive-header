@@ -1,77 +1,81 @@
 .middle-bar {
-	@include flexCenter;
+  @include flexCenter;
 }
 
 .search-nav {
-	@include flexCenter;
-	justify-content: flex-end;
-	width: 100%;
-	flex-wrap: nowrap;
+  @include flexCenter;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  width: 100%;
 
-	@include responsive(phone-lg) {
-		flex-wrap: wrap;
-	}
+  @include responsive(phone-lg) {
+    flex-wrap: wrap;
+  }
 }
+
 .user-menu {
-	flex: 0 0 auto;
-	text-align: end;
+  flex: 0 0 auto;
+  text-align: end;
 }
 
 .search-bar {
-	flex: 1;
-	min-width: 12rem;
-	border-radius: 5px;
-	background: $light-grey;
-	margin-right: 1rem;
+  background: $light-grey;
+  border-radius: 5px;
+  flex: 1;
+  margin-right: 1rem;
+  min-width: 12rem;
 
-	form {
-		float: left;
-		display: flex;
-		margin: auto;
-		height: 2.5rem;
-		width: 0;
+  @include responsive(tab) {
+    margin-right: 0;
+  }
+  @include responsive(phone-lg) {
+    display: none;
+    margin-top: 1rem;
+    order: 2;
+  }
 
-		@include responsive(phone-lg) {
-			flex: 1 0 6rem;
-		}
-	}
+  form {
+    display: flex;
+    float: left;
+    height: 2.5rem;
+    margin: auto;
+    width: 0;
 
-	input {
-		flex: 1;
-		width: auto;
-		&:focus {
-			outline: none;
-		}
-	}
+    @include responsive(phone-lg) {
+      flex: 1 0 6rem;
+    }
+  }
 
-	.search-btn,
-	input {
-		background: transparent;
-		border: none;
-		margin: 0 0.5rem;
-	}
+  input {
+    flex: 1;
+    width: auto;
 
-	.fa-search {
-		color: $dark-grey;
-	}
+    &:focus {
+      outline: none;
+    }
+  }
 
-	&:hover {
-		background: $light-grey-hover;
-	}
-	&:focus-within {
-		background: white;
-		border: 1px solid $light-grey;
-	}
-	&.active {
-		display: block;
-	}
+  .search-btn,
+  input {
+    background: transparent;
+    border: none;
+    margin: 0 0.5rem;
+  }
 
-	@include responsive(tab) {
-		margin-right: 0rem;
-	}
-	@include responsive(phone-lg) {
-		display: none;
-		order: 2;
-		margin-top: 1rem;
-	}
+  .fa-search {
+    color: $dark-grey;
+  }
+
+  &:hover {
+    background: $light-grey-hover;
+  }
+
+  &:focus-within {
+    background: white;
+    border: 1px solid $light-grey;
+  }
+
+  &.active {
+    display: block;
+  }
 }

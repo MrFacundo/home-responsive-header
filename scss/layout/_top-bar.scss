@@ -1,19 +1,19 @@
 .top-bar {
-	@include flexCenter;
-	background: $light-grey;
-	padding: 0.75rem 1rem;
+  @include flexCenter;
+  background: $light-grey;
+  padding: 0.75rem 1rem;
 
-	@include responsive(tab) {
-		display: none;
-	}
+  @include responsive(tab) {
+    display: none;
+  }
 }
 
 .language-menu {
-	padding-right: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .shipping-link {
-	span {
-		padding-left: 0.2rem;
-	}
+  span {
+    padding-left: 0.2rem;
+  }
 }

@@ -1,0 +1,35 @@
+{
+  "name": "header",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "prettier": "^2.3.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^22.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "laravel-mix": "^6.0.24",
+    "postcss": "^8.3.5",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrFacundo/home-responsive-header.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrFacundo/home-responsive-header/issues"
+  },
+  "homepage": "https://github.com/MrFacundo/home-responsive-header#readme"
+}
