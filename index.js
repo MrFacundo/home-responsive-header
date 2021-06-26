@@ -1,4 +1,6 @@
-let data = [
+// Display array of menu items
+
+let scrollerMenuItems = [
   "Overview",
   "Nuts",
   "Dried fruits",
@@ -16,7 +18,7 @@ let data = [
 
 let menuItems = document.getElementById("menu-scroller");
 
-data.forEach((item) => {
+scrollerMenuItems.forEach((item) => {
   let li = document.createElement("li");
   let a = document.createElement("a");
   li.appendChild(a);
@@ -25,7 +27,9 @@ data.forEach((item) => {
   menuItems.appendChild(li);
 });
 
-var toggleActiveClass = () => {
+// Onclick event handlers. Function set into window variable so it's accessible after Laravel-Mix / Webpack
+
+window.toggleActiveClass = function () {
   document.getElementById("search").classList.toggle("active");
   document.getElementById("toggle").classList.toggle("fa-search");
   document.getElementById("toggle").classList.toggle("fa-times");
